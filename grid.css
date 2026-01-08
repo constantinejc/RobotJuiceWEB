@@ -16,3 +16,28 @@ aside.siteBlocks, footer.siteBlocks {
 aside.siteBlocks > *, footer.siteBlocks > * {
     grid-column: 2 / -2;
 }
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.logo {
+    display: block;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.banner img {
+    grid-column: 1 / 7;
+    width: 100%;
+}
+
+.serviceList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}

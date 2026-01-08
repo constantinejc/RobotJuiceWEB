@@ -1,0 +1,16 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+}
+
+.serviceList {
+    width: 100%;
+}
+
+.serviceList img {
+    width: 100%;
+}
