@@ -15,6 +15,10 @@ header nav ul {
 
 .logo {
     display: block;
+    width: 10rem;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
 }
 
 .banner {
@@ -89,10 +93,4 @@ footer.siteBlocks address {
 
 footer.siteBlocks .footerLinks {
     grid-column: 6 / 9;
-}
-
-.logo {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column: 1 / 3;
 }

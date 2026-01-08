@@ -79,14 +79,15 @@ aside.pollContainer {
 
 #bigLetter {
     font-size: 32px;
-    color: ;
+    color: #C5110B;
 }
 
 #bigLetter span {
-
+    color: #000000;
 }
 
 #smallLetter {
     font-size: 11px;
     text-align: right;
+    color: #333333;
 }
