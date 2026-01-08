@@ -1,16 +1,92 @@
-nav ul {
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+body {
+    background-color: #EEEEEE;
+    margin: 0;
+}
+
+.iceberg-regular {
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.newsDate {
+    text-align: right;
+    color: red;
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
 }
 
-li {
+header nav ul li {
     text-align: center;
 }
 
-.serviceList {
+.banner img, .serviceList, .serviceList img, hr {
     width: 100%;
 }
 
-.serviceList img {
-    width: 100%;
+.banner p {
+    text-align: center;
+}
+
+hr {
+    size: 2;
+    margin-bottom: 5%;
+}
+
+aside.siteBlocks img {
+    padding: 1rem;
+}
+
+aside.siteBlocks .latestReviews {
+    padding: 1rem;
+    padding-top: 0;
+}
+
+
+aside.siteBlocks nav ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside.siteBlocks nav li {
+    display: block;
+    padding: 0.5rem;
+    padding-left: 0;
+}
+
+aside.upperFooter {
+    background-color: white;
+}
+
+footer.siteBlocks {
+    background-color: #C8110B;
+}
+
+aside.pollContainer ul {
+    list-style: none;
+}
+
+aside.pollContainer {
+    background-color: white;
+}
+
+#bigLetter {
+    font-size: 32px;
+    color: ;
+}
+
+#bigLetter span {
+
+}
+
+#smallLetter {
+    font-size: 11px;
+    text-align: right;
 }

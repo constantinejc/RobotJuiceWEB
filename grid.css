@@ -8,16 +8,7 @@ body {
     grid-column: 2 / -2;
 }
 
-aside.siteBlocks, footer.siteBlocks {
-    grid-column: 1 / -1;
-    grid-template-columns: subgrid;
-}
-
-aside.siteBlocks > *, footer.siteBlocks > * {
-    grid-column: 2 / -2;
-}
-
-nav ul {
+header nav ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
@@ -33,11 +24,75 @@ nav ul {
 
 .banner img {
     grid-column: 1 / 7;
-    width: 100%;
+}
+
+.banner p {
+    grid-column: 2 / 6;
+    font-size: 2rem;
 }
 
 .serviceList {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+}
+
+hr {
+    display: grid;
+}
+
+.newsAndPoll {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.latestNews {
+    grid-column: 1 / 5;
+}
+
+.pollContainer {
+    grid-column: 5 / 7;
+    padding: 1rem;
+}
+
+/* This is here so that the footer and the aside can be targeted and have their background color changed
+while still keeping their contents constrained between the two outer columns. */
+aside.siteBlocks {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+}
+
+aside.siteBlocks img {
+    grid-column: 2 / 3;
+}
+
+aside.siteBlocks .latestReviews {
+    grid-column: 3 / 5;
+}
+
+aside.siteBlocks nav {
+    grid-column: 6 / 8;
+}
+
+footer.siteBlocks {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+}
+
+footer.siteBlocks address {
+    grid-column: 2 / 6;
+}
+
+footer.siteBlocks .footerLinks {
+    grid-column: 6 / 9;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column: 1 / 3;
 }

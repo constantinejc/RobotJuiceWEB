@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="grid.css">
+        <link rel="stylesheet" href="styles.css">
         <script src="scripts.js" defer></script>
         <title>RobotJuice | Homepage</title>
     </head>
     <body>
         <header class="siteBlocks">
             <section class="logo">
-                <p>RobotJuice</p>
-                <p>fictitious cycle lubricants</p>
+                <p id="bigLetter"><span>Robot </span>Juice</p>
+                <p id="smallLetter">fictitious cycle lubricants</p>
             </section>
             <nav>
                 <ul>
@@ -28,55 +28,57 @@
         <main class="siteBlocks">
             <section class="banner">
                 <img src="resources/robotbanner.jpg" alt="Robot juice's toy robot mascot riding a toy bike.">
-                <p>Robot juice is the ultimate fictitious bicycle and motorcycle lubricant oils.</p>
+                <p class="iceberg-regular">Robot juice is the ultimate fictitious bicycle and motorcycle lubricant oils.</p>
             </section>
+            <hr>
             <section class="serviceList">
                 <article>
                     <img src="resources/bikechain-bikeoil.jpg" alt="Lubricated bike chain.">
-                    <h2>Bike Oil</h2>
+                    <h2 class="iceberg-regular">Bike Oil</h2>
                     <p>Stops and protects against rust, reduces friction on moving parts and is essential on any cycle.</p>
                 </article>
                 <article>
                     <img src="resources/cycleside-drylubrication.jpg" alt="Person riding bike down a dry">
-                    <h2>Dry Lubricant</h2>
+                    <h2 class="iceberg-regular">Dry Lubricant</h2>
                     <p>Perfect chain lubricant for dry road riding. Resists water penetration and wash-off easily.</p>
                 </article>
                 <article>
                     <img src="resources/frontcycle-wetlubrication.jpg" alt="Person riding bike down a wet road in cloudy weather.">
-                    <h2>Wet Lubricant</h2>
+                    <h2 class="iceberg-regular">Wet Lubricant</h2>
                     <p>A thick, heavy duty lube designed to stick to the chain in wet conditions. Ideal for extreme weather and long distance riding.</p>
                 </article>
                 <article>
                     <img src="resources/productreviews.jpg" alt="People writing reviews with pen and paper.">
-                    <h2>Product Reviews</h2>
+                    <h2 class="iceberg-regular">Product Reviews</h2>
                     <p>Read what the press and our customers say about our excellent</p>
                 </article>
             </section>
-            <section>
+            <hr>
+            <section class="newsAndPoll">
                 <section class="latestNews">
-                    <h2>Latest News</h2>
+                    <h2 class="iceberg-regular">Latest News</h2>
                     <article>
                         <h3>News item one!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.</p>
-                      <p>September, 2012</p>
+                      <p class="newsDate">September, 2012</p>
                     </article>
                     <article>
                         <h3>News item one!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
-                        <p>September, 2012</p>
+                        <p class="newsDate">September, 2012</p>
                     </article>
                     <article>
                         <h3>News item one!</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
-                        <p>September, 2012</p>
+                        <p class="newsDate">September, 2012</p>
                     </article>
                 </section>
                 <aside class="pollContainer">
                     <h2>Reader Poll</h2>
                     <p>Are Robot Juice the best and most usable and accessible fake oils around?</p>
                     <ul>
-                        <li>Yes</li>
-                        <li>No</li>
+                        <li><input type="radio" name="pollChoice" value="1" checked>Yes</li>
+                        <li><input type="radio" name="pollChoice" value="0">No</li>
                     </ul>
                     <h2>Competition</h2>
                     <p>Win absolutely nothing by entering this extremely expensive competition. Robot Juice will not send you a full range of our cycling and motorcycle oils and lubricants as we do not exist. But just for fun..</p>
@@ -91,12 +93,12 @@
             </section>
         </main>
         <aside class="siteBlocks upperFooter">
-            <img class="innerBlocks" src="resources/cyclemagazine.jpg" alt="Cycling magazine">
-            <section class="innerBlocks latestReviews">
+            <img src="resources/cyclemagazine.jpg" alt="Cycling magazine">
+            <section class="latestReviews">
                 <h1>Latest Reviews</h1>
                 <p>Cycling magazine has given Robot Juice a 5 star rating in its latest reviews of dry lubricants. Robot Juice Dry lube was rated the highest out of over 40 top brand dry lubs.</p>
             </section>
-            <nav class="innerBlocks secondFooterNav">
+            <nav>
                 <h1>Links</h1>
                 <ul>
                     <li>Edge Hill University</li>
@@ -107,11 +109,11 @@
             </nav>
         </aside>
         <footer class="siteBlocks">
-            <address class="innerBlocks">
+            <address>
                 Robot Juice Fictitious Products Not Ltd., Unit 9¾, Privet Drive, Little Whingeing, Surrey DN18 5RP
                 Telephone: +44 (0)1695 657648. Email: walshd@edgehill.ac.uk
             </address>
-            <nav class="innerBlocks footerLinks">
+            <nav class="footerLinks">
                 <p>Contact Us | Privacy | Terms & Conditions | Accessibility</p>
                 <p>Copyright © 2018 Dave Walsh. Design by Dave Walsh</p>
             </nav>
