@@ -1,26 +1,46 @@
-body {
+/* This section of CSS is shared between the two pages. */
+
+body { /*
+    The entire website uses 8 grid columns as a baseline - 
+    6 for all the content and 1 on each side as visual margins.*/
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
 
-.siteBlocks {
+.siteBlocks { /*
+    Limit all content on the website to within the
+    inner 6 columns.*/
     display: grid;
     grid-column: 2 / -2;
 }
 
-header nav ul {
+hr { /*
+Makes the horizontal bar/divider stick to the grid rules (not going over
+the first and last columns). */
+    display: grid;
+}
+
+header nav ul { /* 
+This makes the nav render horizontally, equally split among the 6 columns
+that the content takes up. */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
 
-.logo {
+.logo { /*
+Displays the entire logo as a block so the elements within it remain static
+as the viewport shrinks. Could not get it to work at this point in time. */
     display: block;
     width: 10rem;
     margin: 0;
     padding: 0;
 }
 
-.banner {
+/* This secetion is used only by index.html */
+
+.banner { /*
+Gives the banner section 6 columns to line up with the 
+inner ones from its parent, which has the .siteBlocks class. */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
@@ -34,17 +54,17 @@ header nav ul {
     font-size: 2rem;
 }
 
-.serviceList {
+.serviceList { /*
+Splits the services section into 4 equal fractions and leave a reasonable gap between them. */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
-hr {
-    display: grid;
-}
 
-.newsAndPoll {
+.newsAndPoll { /*
+The news & poll section is split into 6 equal columns, with 4 of them
+given to the Latest News section and 2 being given to the poll. */
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 5rem;
@@ -61,11 +81,11 @@ hr {
 }
 
 /* This is here so that the footer and the aside can be targeted and have their background color changed
-while still keeping their contents constrained between the two outer columns. */
+while still keeping their contents constrained between the two outer columns. Very hacky solution and will 
+replace if I find a better solution. */
 aside.siteBlocks {
     display: grid;
     grid-column: 1 / -1;
-    grid-template-columns: subgrid;
 }
 
 aside.siteBlocks img {
@@ -83,7 +103,6 @@ aside.siteBlocks nav {
 footer.siteBlocks {
     display: grid;
     grid-column: 1 / -1;
-    grid-template-columns: subgrid;
 }
 
 footer.siteBlocks address {
@@ -92,4 +111,28 @@ footer.siteBlocks address {
 
 footer.siteBlocks .footerLinks {
     grid-column: 6 / 9;
+}
+
+/* From here onwards, the CSS code is exclusively meant for product.html */
+
+.productImages {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.productThumbs {
+    grid-column: 1;
+    width: 100%;
+    cursor: pointer;
+}
+
+.mainProduct {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    width: 100%;
 }

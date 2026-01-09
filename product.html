@@ -2,22 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--
+        Viewport set to screen width to accommodate for mobile devices
+        -->
         <link rel="stylesheet" href="grid.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css"> <!--
+        Styles loaded after grid so they take precedence, a safety net in case of conflict
+        -->
         <script src="scripts.js" defer></script>
         <title>RobotJuice | Homepage</title>
     </head>
     <body>
-        <header class="siteBlocks">
+        <header class="siteBlocks"> <!--
+        The siteBlocks class is what defines the major chunks of the site vertically
+            -->
             <section class="logo">
-                <p>RobotJuice</p>
-                <p>fictitious cycle lubricants</p>
+                <p id="bigLetter"><span>Robot </span>Juice</p>
+                <p id="smallLetter">fictitious cycle lubricants</p>
             </section>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
                     <li>Protect</li>
                     <li>Stockist's</li>
                     <li>Events</li>
@@ -26,17 +32,42 @@
             </nav>
         </header>
         <main class="siteBlocks">
-            <section class="siteBlocks">
+            <section class="siteBlocks productImages">
                 <img class="productThumbs" src="resources/prod-thumb1.jpg" alt="Bottle of bike oil overlayed on an image of a well oiled bicycle gearbox">
                 <img class="productThumbs" src="resources/prod-thumb2.jpg" alt="Well oiled bicycle chain in a pile">
                 <img class="productThumbs" src="resources/prod-thumb3.jpg" alt="Pool of the oil on a white background">
                 <img class="mainProduct" src="resources/robotjuicebikeoil.jpg" alt="Bottle of bike oil overlayed on an image of a well oiled bicycle gearbox">
-            </section>//
-            <section class="siteBlocks">
-
             </section>
-            <section class="siteBlocks">
-
+            <section class="siteBlocks productDetails">
+                <h1>Bike Oil</h1>
+                <p class="productCost">£99.99</p>
+                <label>
+                    Size
+                    <select>
+                        <option>Standard bottle (500ML)</option>
+                        <option>Litre bottle (1L)</option>
+                        <option>Gallon bottle (4.5L)</option>
+                        <option>Jerrycan (20L)</option>
+                    </select>
+                </label>
+                <label>
+                    Qty
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </label>
+                <button class="productBuyButton">BUY NOW</button>
+                <p class="productFindNear">FIND NEAREST STOCKIST</p>
+                <p class="productShare">SHARE</p>
+                <img class="productShareImg" src="resources/facebook.jpg" alt="Share on Facebook">
+                <img class="productShareImg" src="resources/twitter.jpg" alt="Share on Twitter">
+                <img class="productShareImg" src="resources/email.jpg" alt="Share by Email">
+            </section>
+            <section class="siteBlocks" id="productReviewsSection">
             </section>
         </main>
         <aside class="siteBlocks upperFooter">

@@ -2,22 +2,28 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--
+        Viewport set to screen width to accommodate for mobile devices
+        -->
         <link rel="stylesheet" href="grid.css">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css"> <!--
+        Styles loaded after grid so they take precedence, a safety net in case of conflict
+        -->
         <script src="scripts.js" defer></script>
         <title>RobotJuice | Homepage</title>
     </head>
     <body>
-        <header class="siteBlocks">
+        <header class="siteBlocks"> <!--
+        The siteBlocks class is what defines the major chunks of the site vertically
+            -->
             <section class="logo">
                 <p id="bigLetter"><span>Robot </span>Juice</p>
                 <p id="smallLetter">fictitious cycle lubricants</p>
             </section>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Products</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
                     <li>Protect</li>
                     <li>Stockist's</li>
                     <li>Events</li>
